@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    /* Inline styles removed - all styling moved to styles.css */
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="portfolio-header">
+    <nav class="navbar">
+      <ul class="nav-list">
+        <li class="nav-item"><a href="#home" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+        <li class="nav-item"><a href="#about" class="nav-link"><i class="fas fa-user"></i> About</a></li>
+        <li class="nav-item"><a href="#work" class="nav-link"><i class="fas fa-briefcase"></i> Work</a></li>
+        <li class="nav-item"><a href="#resume" class="nav-link"><i class="fas fa-file-alt"></i> Resume</a></li>
+        <li class="nav-item"><a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HOME -->
+  <main class="portfolio-main">
+    <section id="home" class="portfolio-section home-section">
+      <h1 class="section-title welcome-heading">Welcome to My Portfolio</h1>
+      <p class="intro-text">Hello! I'm Oluwaseun Asekoni, a passionate web developer with expertise in creating modern, responsive web applications. I love turning complex problems into simple, beautiful designs.</p>
+      <div class="portfolio-video">
+        <video width="100%" controls poster="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80">
+          <source src="FOLA - bye bye (Official Video).mp4" type="video/mp4">
+          Your browser does not support HTML video.
+        </video>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="portfolio-section">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>I am a full-stack web developer with 5+ years of experience in both front-end and back-end technologies. My expertise includes HTML, CSS, JavaScript, React, Node.js, and Python.</p>
+          <p>I enjoy creating user-friendly applications that solve real-world problems. When I'm not coding, I love contributing to open-source projects, writing tech blogs, and exploring new frameworks.</p>
+          <p>My goal is to build digital experiences that are both beautiful and functional, with clean code and excellent performance.</p>
+        </div>
+        <div class="about-audio">
+          <audio controls style="width: 100%;">
+            <source src="FOLA-bye-bye-(CeeNaija.com).mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+          </audio>
+          <p style="text-align: center; margin-top: 10px; color: #666; font-style: italic;">Listen to my favorite coding soundtrack</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section id="work" class="portfolio-section">
+      <h2 class="section-title">My Work</h2>
+      <p>Here are some of my recent projects that showcase my skills and creativity:</p>
+      <ul class="project-list">
+        <li class="project-item">
+          <a href="project1.html" class="project-link">Project One - Personal Blog</a>
+          <p>A responsive personal blog built with React and Node.js, featuring a custom CMS, comment system, and SEO optimization.</p>
+        </li>
+        <li class="project-item">
+          <a href="project2.html" class="project-link">Project Two - Portfolio Website</a>
+          <p>A modern portfolio website with smooth animations, dark/light mode toggle, and performance optimization.</p>
+        </li>
+        <li class="project-item">
+          <a href="project3.html" class="project-link">Project Three - E-commerce App</a>
+          <p>A full-stack e-commerce application with shopping cart, payment integration, and admin dashboard.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- RESUME -->
+    <section id="resume" class="portfolio-section">
+      <h2 class="section-title">Resume</h2>
+      <table class="resume-table">
+        <tr>
+          <th>Year</th>
+          <th>Experience & Education</th>
+        </tr>
+        <tr>
+          <td>2023 - Present</td>
+          <td><strong>Senior Front-End Developer</strong> at Don's Tech Company<br>Leading a team of 5 developers, implementing modern React patterns, and optimizing application performance.</td>
+        </tr>
+        <tr>
+          <td>2021 - 2023</td>
+          <td><strong>Full-Stack Developer</strong> at SeunSekony Tech<br>Developed 10+ web applications using MERN stack, implemented REST APIs, and improved site performance by 40%.</td>
+        </tr>
+        <tr>
+          <td>2019 - 2021</td>
+          <td><strong>Bachelor's Degree in Computer Science</strong><br>Graduated with Honors. Specialized in Web Technologies and Human-Computer Interaction.</td>
+        </tr>
+        <tr>
+          <td>Skills</td>
+          <td><strong>Technical Stack:</strong> HTML5, CSS3, JavaScript (ES6+), React, Node.js, Python, MongoDB, Git<br>
+              <strong>Soft Skills:</strong> Team Leadership, Project Management, Problem Solving, Communication</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="portfolio-section">
+      <h2 class="section-title">Contact Me</h2>
+      <p>Have a project in mind? Feel free to reach out! I typically respond within 24 hours.</p>
+      <form class="contact-form" action="submit_form.php" method="post">
+        <div class="form-group">
+          <label for="name" class="form-label">Name:</label>
+          <input type="text" id="name" name="name" class="form-input" required placeholder="Enter your name">
+        </div>
+        
+        <div class="form-group">
+          <label for="email" class="form-label">Email:</label>
+          <input type="email" id="email" name="email" class="form-input" required placeholder="Enter your email">
+        </div>
+        
+        <div class="form-group">
+          <label for="message" class="form-label">Message:</label>
+          <textarea id="message" name="message" rows="5" class="form-textarea" required placeholder="Tell me about your project..."></textarea>
+        </div>
+        
+        <button type="submit" class="submit-btn"><i class="fas fa-paper-plane"></i> Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="portfolio-footer">
+    <p class="footer-text">&copy; 2025 My Portfolio | Designed by Oluwaseun Asekoni</p>
+    <p class="footer-text">
+      <a href="mailto:oluzeun21@gmail.com" style="color: white; text-decoration: none;">oluzeun21@gmail.com</a> | 
+      <a href="tel:+2349151024642" style="color: white; text-decoration: none;">+234 (915) 102-4642</a>
+    </p>
+    <p class="footer-text" style="margin-top: 10px;">
+      <a href="#" style="color: white; margin: 0 10px;"><i class="fab fa-linkedin"></i></a>
+      <a href="#" style="color: white; margin: 0 10px;"><i class="fab fa-github"></i></a>
+      <a href="#" style="color: white; margin: 0 10px;"><i class="fab fa-twitter"></i></a>
+    </p>
+  </footer>
+
+</body>
+</html>
